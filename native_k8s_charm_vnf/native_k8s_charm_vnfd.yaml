@@ -1,0 +1,31 @@
+vnfd:
+  df:
+  - id: default-df
+    lcm-operations-configuration:
+      operate-vnf-op-config:
+        day1-2:
+          - id: native-kdu
+            config-primitive:
+            - name: adduser
+              parameter:
+              - name: application-name
+                data-type: STRING
+                default-value: radius
+              - data-type: STRING
+                default-value: username
+                name: username
+              - data-type: STRING
+                default-value: password
+                name: password
+  ext-cpd:
+  - id: mgmt-ext
+    k8s-cluster-net: mgmtnet
+  id: native_k8s_charm-vnf
+  k8s-cluster:
+    nets:
+    - id: mgmtnet
+  kdu:
+  - name: native-kdu
+    juju-bundle: bundle.yaml
+  mgmt-cp: mgmt-ext
+  product-name: native_k8s_charm-vnf

@@ -1,0 +1,18 @@
+# Copyright 2021 root
+# See LICENSE file for licensing details.
+name: freeradius-k8s
+description: |
+  TEMPLATE-TODO: fill out the charm's description
+summary: |
+  TEMPLATE-TODO: fill out the charm's summary
+maintainers: 
+  - onboarding-freeradius-cnf-team1
+series:
+  - kubernetes
+deployment:
+  type: stateless
+  service: loadbalancer
+requires:
+  mysql:
+    interface: mysql
+  

@@ -1,0 +1,1 @@
+987d43209b23307a3fc753b002d9d6cd	native_k8s_charm_ns/native_k8s_charm_nsd.yaml
