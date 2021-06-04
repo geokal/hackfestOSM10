@@ -1,0 +1,21 @@
+nsd:
+  nsd:
+  - description: NS with 1 KDU connected to the mgmtnet VL
+    df:
+    - id: default-df
+      vnf-profile:
+      - id: native_k8s_charm-vnf
+        virtual-link-connectivity:
+        - constituent-cpd-id:
+          - constituent-base-element-id: native_k8s_charm-vnf
+            constituent-cpd-id: mgmt-ext
+          virtual-link-profile-id: mgmtnet
+        vnfd-id: native_k8s_charm-vnf
+    id: native_k8s_charm-ns
+    name: native_k8s_charm-ns
+    version: '1.0'
+    virtual-link-desc:
+    - id: mgmtnet
+      mgmt-network: true
+    vnfd-id:
+    - native_k8s_charm-vnf
