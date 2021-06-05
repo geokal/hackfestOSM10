@@ -2,7 +2,7 @@
 
 ## Description
 
-A freeradius-k8s VNF with Juju Charms for doing various actions
+A freeradius-k8s VNF for OSM MANO ( etsi.osm.org) with Juju Charms for doing various actions forked from matsarou/hackfestOSM10
 
 ## Usage
 
